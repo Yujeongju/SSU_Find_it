@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_main"
+    android:orientation="vertical"
+    android:weightSum="340">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="77"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="145"
+        android:weightSum="580">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="54" />
+
+        <ImageButton
+            android:onClick="onClick_menu_detail"
+            android:id="@+id/best_tag_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="145"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/best_tag_icon"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <ImageButton
+            android:onClick="onClick_menu_detail"
+            android:id="@+id/help_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="145"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/help_icon" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <ImageButton
+            android:onClick="onClick_menu_detail"
+            android:id="@+id/dev_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="145"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dev_icon" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:weightSum="580">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="210">
+        </LinearLayout>
+
+        <ImageButton
+            android:onClick="onClick_close"
+            android:id="@+id/close_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:src="@drawable/close"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="210">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="37">
+
+    </LinearLayout>
+
+</LinearLayout>

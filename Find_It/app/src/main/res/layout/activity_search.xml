@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1280">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="205"
+        android:background="@drawable/main_top_img"
+        android:orientation="vertical"
+        android:weightSum="205">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="32">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="62"
+            android:weightSum="720">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="23" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="39"
+                android:src="@drawable/img_shop" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="23" />
+
+            <EditText
+                android:id="@+id/keyword_zone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="475"
+                android:background="@color/white"
+                android:hint="해시태그를 입력하세요"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/shadow" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="14" />
+
+            <ImageButton
+                android:id="@+id/search_mark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="53"
+                android:background="@android:color/transparent"
+                android:onClick="onClick_search"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mark" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="14" />
+
+            <ImageButton
+                android:id="@+id/menu_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="53"
+                android:background="@android:color/transparent"
+                android:onClick="onClick_menu"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dev_mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="32">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="43"
+            android:weightSum="720">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="175"
+                android:src="@drawable/text" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="513" />
+
+            <TextView
+                android:id="@+id/img_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9000"
+                android:paddingRight="10dp"
+                android:text="새로고침하세요"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/white"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="27"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_view"
+        android:layout_height="0dp"
+        android:layout_weight="1055"
+        android:background="@color/white"
+        android:layout_width="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
